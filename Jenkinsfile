@@ -6,7 +6,7 @@ node('built-in')
 	}
     stage('Continuous Build') 
 	{
-    sh label: '', script: ' package'
+    sh label: '', script: 'mvn package'
 	}
     stage('Continuous Deployment') 
 	{
